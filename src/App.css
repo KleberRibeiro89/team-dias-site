@@ -1,32 +1,67 @@
-.App {
-  text-align: center;
+html,
+body {
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+ .container-fluid {
+  height: 100%;
+  padding:0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sidebar {
+  height: 100%;
+   background-color: #FFF370; 
+  width: 240px;
+  padding-top: 3.4rem
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-header {
+  color: rgb(78, 1, 88);
+   background-color: #FFF370;
+}
+
+.sidebar-item.active {
+  background-color: #F500C4;
+}
+
+.sidebar-item.active > .sidebar-link {
+  color: #FFFFFF;
+}
+
+
+.sidebar-link,
+.sidebar-header {
+  padding: 10px 20px;
+}
+
+.sidebar-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(114, 7, 109);
+}
+
+.sidebar-link:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #F500C4;
+}
+
+.sidebar-link .label {
+  margin-top: 4px;
+}
+
+.sidebar-link i {
+  margin-right: 5px;
+}
+
+.header{
+  margin-left:240px;
+}
+.navbar{
+   background-color: #2F323A; 
 }
